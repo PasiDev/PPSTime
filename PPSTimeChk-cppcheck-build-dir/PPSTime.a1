@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="652119286499902188">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fcntl.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fcntl.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\PPSTime.c" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\PPSTime.c" line="15" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\PPSTime.c" line="16" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\PPSTime.c" line="17" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\PPSTime.c" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\PPSTime.c" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;time.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;time.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\PPSTime.c" line="20" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="X:\Coding\PPSTime\include\tools.h" line="14" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="X:/Coding/PPSTime/include/BBBiolib.h:305:5" call-funcname="iolib_setdir" call-argnr="3" file="source/PPSTime.c" line="46" col="17" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="X:/Coding/PPSTime/include/UART.h:20:5" call-funcname="uartTimelogRead" call-argnr="1" file="source/PPSTime.c" line="69" col="24" call-argexpr="commandbuffer" call-argvaluetype="7" call-argvalue="256"/><function-call call-id="X:/Coding/PPSTime/include/tools.h:20:5" call-funcname="parseTimelog" call-argnr="1" file="source/PPSTime.c" line="75" col="21" call-argexpr="commandbuffer" call-argvaluetype="7" call-argvalue="256"/><function-call call-id="X:/Coding/PPSTime/include/tools.h:20:5" call-funcname="parseTimelog" call-argnr="2" file="source/PPSTime.c" line="75" col="21" call-argexpr="&amp;utcseconds" call-argvaluetype="7" call-argvalue="8"/><function-call call-id="X:/Coding/PPSTime/include/tools.h:20:5" call-funcname="parseTimelog" call-argnr="2" file="source/PPSTime.c" line="75" col="21" call-argexpr="utcseconds" call-argvaluetype="4" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="source/PPSTime.c" functionName="main" lineNumber="38"/>
+    <functioncall functionName="CLOCK_MONOTONIC"/>
+    <functioncall functionName="clock_gettime"/>
+    <functioncall functionName="gpsSectoSystemTime"/>
+    <functioncall functionName="iolib_free"/>
+    <functioncall functionName="iolib_init"/>
+    <functioncall functionName="iolib_setdir"/>
+    <functioncall functionName="parseTimelog"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="uartClose"/>
+    <functioncall functionName="uartInit"/>
+    <functioncall functionName="uartTimelogCmd"/>
+    <functioncall functionName="uartTimelogRead"/>
+    <functioncall functionName="usleep"/>
+    <functioncall functionName="waitPPSHigh"/>
+  </FileInfo>
+</analyzerinfo>

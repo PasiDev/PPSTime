@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="14424308607181343565">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\tools.c" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\tools.c" line="15" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\tools.c" line="16" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\tools.c" line="17" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\tools.c" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\tools.c" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;time.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;time.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\tools.c" line="21" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="X:\Coding\PPSTime\include\tools.h" line="14" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="X:/Coding/PPSTime/include/tools.h:22:15" call-funcname="calculateBlockCRC32" call-argnr="2" file="source/tools.c" line="138" col="31" call-argexpr="ucbuffer" call-argvaluetype="7" call-argvalue="200"/>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="X:/Coding/PPSTime/include/tools.h:20:5" my-argnr="2" my-argname="oututcseconds" file="source/tools.c" line="169" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="source/tools.c" functionName="waitPPSHigh" lineNumber="35"/>
+    <functiondecl file="source/tools.c" functionName="parseTimelog" lineNumber="93"/>
+    <functiondecl file="source/tools.c" functionName="CRC32Value" lineNumber="212"/>
+    <functiondecl file="source/tools.c" functionName="calculateBlockCRC32" lineNumber="240"/>
+    <functiondecl file="source/tools.c" functionName="gpsSectoSystemTime" lineNumber="267"/>
+    <functioncall functionName="CLOCK_MONOTONIC"/>
+    <functioncall functionName="CRC32Value"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="calculateBlockCRC32"/>
+    <functioncall functionName="clock_gettime"/>
+    <functioncall functionName="clock_settime"/>
+    <functioncall functionName="fprintf"/>
+    <functioncall functionName="is_high"/>
+    <functioncall functionName="is_low"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="modf"/>
+    <functioncall functionName="perror"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="stderr"/>
+    <functioncall functionName="strcmp"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strtok"/>
+    <functioncall functionName="strtol"/>
+    <functioncall functionName="strtold"/>
+    <functioncall functionName="usleep"/>
+  </FileInfo>
+</analyzerinfo>

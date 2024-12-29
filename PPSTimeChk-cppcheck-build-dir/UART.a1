@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="9983076902941995474">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fcntl.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fcntl.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\UART.c" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\UART.c" line="15" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\UART.c" line="16" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\UART.c" line="17" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\UART.c" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;termios.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;termios.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="source\UART.c" line="19" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="X:\Coding\PPSTime\include\tools.h" line="14" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="source/UART.c" functionName="uartInit" lineNumber="37"/>
+    <functiondecl file="source/UART.c" functionName="uartClose" lineNumber="106"/>
+    <functiondecl file="source/UART.c" functionName="uartTimelogCmd" lineNumber="131"/>
+    <functiondecl file="source/UART.c" functionName="uartTimelogRead" lineNumber="156"/>
+    <functioncall functionName="B9600"/>
+    <functioncall functionName="IXANY"/>
+    <functioncall functionName="O_NOCTTY"/>
+    <functioncall functionName="TCIFLUSH"/>
+    <functioncall functionName="TCSADRAIN"/>
+    <functioncall functionName="TCSANOW"/>
+    <functioncall functionName="VMIN"/>
+    <functioncall functionName="VTIME"/>
+    <functioncall functionName="bzero"/>
+    <functioncall functionName="cfsetspeed"/>
+    <functioncall functionName="close"/>
+    <functioncall functionName="open"/>
+    <functioncall functionName="perror"/>
+    <functioncall functionName="read"/>
+    <functioncall functionName="tcflush"/>
+    <functioncall functionName="tcgetattr"/>
+    <functioncall functionName="tcsetattr"/>
+    <functioncall functionName="write"/>
+  </FileInfo>
+</analyzerinfo>

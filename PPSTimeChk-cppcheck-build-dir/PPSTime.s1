@@ -1,0 +1,1 @@
+main call:[clock_gettime,gpsSectoSystemTime,iolib_free,iolib_init,iolib_setdir,parseTimelog,printf,uartClose,uartInit,uartTimelogCmd,uartTimelogRead,usleep,waitPPSHigh]

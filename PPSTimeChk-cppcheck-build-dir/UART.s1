@@ -1,0 +1,4 @@
+uartInit global:[oldcomconfig,ttys1] call:[bzero,cfsetspeed,open,perror,sizeof,tcflush,tcgetattr,tcsetattr]
+uartClose global:[oldcomconfig,ttys1] call:[close,perror,tcsetattr]
+uartTimelogCmd global:[ttys1] call:[perror,sizeof,write]
+uartTimelogRead global:[ttys1] call:[perror,read]

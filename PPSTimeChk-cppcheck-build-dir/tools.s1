@@ -1,0 +1,5 @@
+waitPPSHigh call:[is_high,is_low,perror,usleep] noreturn:[usleep]
+parseTimelog call:[calculateBlockCRC32,fprintf,memcpy,printf,strcmp,strlen,strtok,strtol,strtold]
+CRC32Value
+calculateBlockCRC32 call:[CRC32Value,return] noreturn:[return]
+gpsSectoSystemTime call:[clock_gettime,clock_settime,modf] noreturn:[clock_settime]
